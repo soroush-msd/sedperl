@@ -1,0 +1,56 @@
+Date        Start       Stop        Activity        Comments
+
+14/04/21    10:00AM     12:00PM     Read spec       read the assignment specification
+                                                    for the first time. took some notes 
+                                                    about different sed commands
+                                                    and assumptions.
+                                                    asked my tutor for clarification
+                                                    on some of the regex addresses
+                                                    discussed in the tutorial.
+
+20/04/21    12:30PM     1:30PM      speed           spend some time to familiarise myself
+                                    behaviour &     with 2041 speed behaviour and thought
+                                    implementation  how to process different type of
+                                    design          commands for implementation
+
+22/04/21    7:30PM      9:00PM      implementation  decided to create seperate functions
+                                    of command q    to process each one of the commands.
+                                    for subset 0    implemented quite command and passed
+                                                    the autotests for it.
+
+[22-23]/04/21   11:30PM  2:15AM     implementation& implemented the commands p and d along
+                                    debugging of    with -n flag. debugged to pass all the
+                                    commands p and  autotests for the edge cases 
+                                    d with -n       (running speed with only p and without any addresses).
+                                                    implemented most of subsitution command - yet to be debugged.
+
+23/04/21    6:00PM      8:30PM      implemented     finished implementing s command. passed autotests
+                                    and debugged    but the code was too repetetive. divided the s command
+                                    s command       into two seperate funtions. one only to 
+                                                    do the subestitution and another to process
+                                                    regex line numbers and regex addresses.
+
+23/04/21    11:00PM     12:00AM     implemented     experimented the reference implementation to 
+                                    $ functionality become familiar with the behavior of this command.
+                                    to address      match the reference implementation for d,q, and p.
+                                    the last line   passed the relevant autotests.
+                                    of inputs
+
+24/04/21    2:00PM      3:30PM      implemented     finished implementing the $ commands for d,p,q,s
+                                    $. command      passed the relevant autotests and did manual testing
+                                    for s and       for edge cases and the ones not covered in autotests.
+                                    tested successfully
+                                    
+25/04/21    9:30PM      11:30PM     writing shell   wrote some shell scripts to test different cases
+                                    scripts for     for each one of the commands. Also tested some edge
+                                    testing         cases with error output messages
+ 
+26/04/21    1:00AM      2:00AM      cleaning up     added some comments to the code for better 
+                                    the code        readability. removed extra lines and notes from the 
+                                    and commenting  code and cleaned up the code a little.                                                    
+                                                    
+                                     
+
+
+
+
