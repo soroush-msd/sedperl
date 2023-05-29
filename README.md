@@ -121,3 +121,28 @@ $ echo will will will | ./speed.pl 's/w/b/g'
 bill bill bill
 ```
 
+And finally, for `'$'` (To address the last line):
+```
+$ seq 1 5 | ./speed.pl '$p'
+1
+2
+3
+4
+5
+5
+
+$ seq 1 5 | ./speed.pl '$d'
+1
+2
+3
+4
+
+$ seq 1 10 | ./speed.pl '$s/[1-9]/haha/'
+1
+2
+3
+.
+.
+haha0
+```
+
