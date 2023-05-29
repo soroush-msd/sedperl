@@ -145,4 +145,16 @@ $ seq 1 10 | ./speed.pl '$s/[1-9]/haha/'
 .
 haha0
 ```
+:large_blue_circle: You can compliment each of the commands above with the `-n` flag. The `-n` flag prevents the input lines to be printed automatically.
 
+For example:
+```
+$ seq 20 70 | ./speed.pl -n '$24p'
+43
+
+$ seq 20 70 | ./speed.pl -n '$p'
+70
+
+$ seq 20 70 | ./speed.pl -n '/5{2}/p'
+55
+```
