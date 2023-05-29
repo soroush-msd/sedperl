@@ -84,3 +84,40 @@ $ seq 20 23 | ./speed.pl '/[2]{2}/d'
 21
 23
 ```
+
+For `'s'` (substitute):
+```
+$ seq 40 45 | ./speed.pl 's/[0-9]/hahaha/'
+hahaha0
+hahaha1
+hahaha2
+hahaha3
+hahaha4
+hahaha5
+
+$ echo today is a good day in LA | ./speed.pl 's/LA/Sydney/'
+today is a good day in Sydney
+
+$ seq 40 45 | ./speed.pl '4s/43/forty-three/'
+40
+41
+42
+forty-three
+44
+45
+
+$ seq 100 300 | ./speed.pl '/^.*00$/s/00/**/'
+1**
+101
+.
+.
+2**
+201
+.
+.
+3**
+
+$ echo will will will | ./speed.pl 's/w/b/g'
+bill bill bill
+```
+
